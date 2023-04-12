@@ -1,0 +1,64 @@
+
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(226, 233, 233);
+    display: grid;
+    padding: 20px;
+    row-gap: 8px;
+    column-gap: 8px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "cat1 cat1 cat2 cat2 cat3 cat3 cat4 cat4"
+                         "p1 p1 p1 p2 p2 p2 p2 p2"
+                         "p3 p3 p3 p3 p3 p4 p4 p4";
+}
+.cat1{
+grid-area: cat1;
+background-image: radial-gradient(rgb(50, 7, 150), rgb(46, 34, 114), rgb(5, 5, 65));
+position: relative; 
+}
+.cat2{
+grid-area: cat2;
+background-color: black;
+
+}
+.cat3{
+ grid-area: cat3;
+ background-color: black;
+}
+.cat4{
+  grid-area: cat4;
+  background-color: black;
+}
+.p1{
+    grid-area: p1;
+    background-color: black;
+   
+
+}
+.p2{
+   grid-area: p2;
+   background-color: black;
+}
+.p3{
+   grid-area: p3;
+  
+   background-color: black;
+}
+.p4{
+    grid-area: p4;
+    background-color: black;
+
+}.img{
+
+    width: 100%;
+    height: 100%;
+}.label{
+    position: absolute;
+    top: 20px;
+    
+
+    
+}

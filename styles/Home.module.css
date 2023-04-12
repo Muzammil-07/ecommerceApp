@@ -1,10 +1,57 @@
-.container {
-  padding: 0;
-  width:100%;
+.Home {
+  padding: 2px;
+  width:100vw;
   margin: 0;
-}
 
-.main {
+  
+}
+.parent{
+  width: 100vw;
+  position: relative;
+  /* background-color: black; */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px  1fr 2fr auto;
+  grid-template-areas: "topbar"
+                        "crousal"
+                        "mainContent"
+                         "footer";
+}
+.topBar{
+  background-color:#301303;
+  grid-area: topbar;
+  color: beige;
+  width: 100vw;
+  
+
+}
+.crousal{
+width: 100vw;
+  grid-area: crousal;
+  
+}
+.mainContent{
+  background-color: yellow;
+  grid-area: mainContent;
+}
+.footer{
+  background-color:#1c0c03;
+  color: beige;
+  grid-area: footer;
+  width: 100vw;
+ 
+}
+.nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 4;
+  color: aliceblue;
+ top: 0px;
+  
+  }
+
+/* .main {
   min-height: 100vh;
   max-width: 100%;
   padding:0;
@@ -24,14 +71,7 @@
   color: beige;
   width: 100%;
 }
-.nav {
-position: fixed;
-width: 100%;
-z-index: 3;
-color: aliceblue;
-margin-top: -25px;
-
-}.footer {
+.footer {
   background-color:#1c0c03;
   height: 250px;
   color: beige;
@@ -40,4 +80,4 @@ margin-top: -25px;
 .card1{
   max-width: 400px;
   height: 300px;
-}
+} */
